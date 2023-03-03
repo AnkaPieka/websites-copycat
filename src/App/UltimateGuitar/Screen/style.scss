@@ -1,0 +1,18 @@
+@use "../../../styles/colors.scss" as colors;
+
+#ult-guitar-wrapper {
+  align-items: center;
+  background-color: colors.$ult-tab-background;
+
+  #ult-guitar-main {
+    height: 100vh;
+    float: left;
+    background-color: colors.$ult-tab-background;
+    border: 1px solid colors.$ult-tab-borders;
+
+    #ult-guitar-body {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+}

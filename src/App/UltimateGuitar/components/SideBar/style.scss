@@ -1,0 +1,55 @@
+@use "../../../../styles/colors.scss" as colors;
+
+#ult-guitar-left-sidebar {
+  width: 192px;
+  height: 100%;
+  border-right: solid 1px colors.$ult-tab-borders;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 12px;
+
+  .user-toolbox {
+    .user-informations {
+      display: flex;
+
+      .profile-details {
+        color: colors.$ult-tab-text-light-grey;
+        margin-left: 6px;
+      }
+
+      .profile-pic {
+        width: 32px;
+        height: 32px;
+        background-image: url("../../../../../public/grumpy-cat.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+      }
+    }
+
+    .user-links {
+      padding: 12px 0 16px;
+
+      a {
+        display: flex;
+        padding: 4px 5px;
+        margin: 0 -4px 2px;
+        color: colors.$ult-tab-text-light-grey;
+
+        span {
+          &:hover {
+            color: colors.$ult-tab-white;
+          }
+        }
+
+        div {
+          color: colors.$ult-tab-light-grey;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+
+  // .website-users-informations {
+  // }
+}

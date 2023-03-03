@@ -15,7 +15,7 @@ function Homepage() {
       </section>
 
       <section>
-        <NavLink to="/ultimate-guitar">Ultimate Guitar</NavLink>
+        <NavLink to="/ultimate-guitar">Ultimate Guitar 🎸</NavLink>
       </section>
     </div>
   );

@@ -15,7 +15,7 @@ function SearchBar() {
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           handleSearchChange(e.currentTarget.value)
         }
-        placeholder="Enter artist name or song title"
+        placeholder="You can write here but it won't search, duh"
       />
       <button>Search</button>
     </div>

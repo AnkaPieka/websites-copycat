@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./App/Components/Footer/Footer";
 import NavBar from "./App/Components/NavBar/NavBar";
 import Homepage from "./App/Homepage/Homepage";
-import UltGuitar from "./App/UltimateGuitar/UltGuitar";
+import UltGuitar from "./App/UltimateGuitar/Screen/UltGuitar";
 
 function App() {
   return (

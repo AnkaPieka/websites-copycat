@@ -1,11 +1,15 @@
+@use "../../../../styles/colors.scss" as colors;
+
 #ult-guitar-navbar-wrapper {
-  border: 1px solid #606060;
+  border: 1px solid colors.$ult-tab-borders;
   border-width: 1px 0;
   padding: 2px;
   height: auto;
+  min-width: 1260px;
+  max-width: 1280px;
 
   #ult-guitar-navbar-main {
-    background-color: #2d2d2d;
+    background-color: colors.$ult-tab-navbar-background;
     height: 66px;
     width: 100%;
     padding: 0 16px;
@@ -23,7 +27,6 @@
         font-size: 10px;
         font-weight: 700;
         line-height: 13px;
-        text-transform: uppercase;
         letter-spacing: 0.0888em;
         padding-left: 10px;
         padding-top: 2px;
@@ -36,7 +39,7 @@
       padding: 0 24px;
       a {
         &:last-child {
-          color: #f55d55;
+          color: colors.$ult-tab-secondary;
         }
 
         &:not(:last-child) {
@@ -44,7 +47,7 @@
         }
 
         span {
-          color: #ffc600;
+          color: colors.$ult-tab-primary;
         }
       }
     }
@@ -57,7 +60,7 @@
       button {
         font-weight: 600;
         line-height: 16px;
-        background-color: #111;
+        background-color: colors.$ult-tab-background;
         color: #ddc;
         box-shadow: none;
         min-height: 36px;
@@ -69,7 +72,7 @@
         width: 100%;
         height: 36px;
         font-size: 13px;
-        border: 1px solid #606060;
+        border: 1px solid colors.$ult-tab-borders;
         border-radius: 2px 0 0 2px;
 
         &:focus-visible {
@@ -80,7 +83,7 @@
       button {
         font-size: 12px;
         border-radius: 0 2px 2px 0;
-        border: 1px solid #606060;
+        border: 1px solid colors.$ult-tab-borders;
         border-left: transparent;
         text-transform: uppercase;
         text-align: center;

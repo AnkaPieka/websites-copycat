@@ -155,11 +155,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h4 {
@@ -182,4 +182,13 @@ p {
 
 button {
   cursor: pointer;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
 }
