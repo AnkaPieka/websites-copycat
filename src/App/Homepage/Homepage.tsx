@@ -1,6 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
-// import "../../styles/fonts.scss";
 
 function Homepage() {
   return (
@@ -14,7 +14,9 @@ function Homepage() {
         </p>
       </section>
 
-      <section>Liste</section>
+      <section>
+        <NavLink to="/ultimate-guitar">Ultimate Guitar</NavLink>
+      </section>
     </div>
   );
 }

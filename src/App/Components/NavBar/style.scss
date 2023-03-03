@@ -16,5 +16,14 @@
 
   a {
     color: colors.$main-color-light;
+
+    h2 {
+      width: fit-content;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :hover {
+      text-shadow: rgba(150, 150, 150, 0.5) 1px 0 10px;
+    }
   }
 }

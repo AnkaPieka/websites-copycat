@@ -1,0 +1,38 @@
+#ult-guitar-navbar-wrapper {
+  border: 1px solid #606060;
+  border-width: 1px 0;
+  padding: 2px;
+  height: auto;
+
+  #ult-guitar-navbar-main {
+    background-color: #2d2d2d;
+    height: 66px;
+    width: 100%;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+
+    .logo-and-brandname {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.0888em;
+        padding-left: 10px;
+        padding-top: 2px;
+      }
+    }
+
+    .navigation-links {
+      a:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

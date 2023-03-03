@@ -168,6 +168,12 @@ h4 {
 
 a {
   text-decoration: none;
+  color: white;
+
+  :visited,
+  :active {
+    color: white;
+  }
 }
 
 p {
