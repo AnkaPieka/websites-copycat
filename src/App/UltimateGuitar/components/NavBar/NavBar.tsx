@@ -1,4 +1,4 @@
-import React from "react";
+import SearchBar from "./components/SearchBar";
 import "./style.scss";
 
 function NavBar() {
@@ -21,14 +21,31 @@ function NavBar() {
 
         <section className="navigation-links">
           <nav>
-              <a href="">Tabs</a>
-              <a href="">Shots</a>
-              <a href="">Courses</a>
-              <a href="">Articles</a>
-              <a href="">Forums</a>
-              <a href="">Publish tab</a>
-              <a href="">Pro</a>
+            <a href="/">Tabs</a>
+            <a href="/">Shots</a>
+            <a href="/">Courses</a>
+            <a href="/">Articles</a>
+            <a href="/">Forums</a>
+            <a href="/" style={{ whiteSpace: "nowrap" }}>
+              <span>+</span>Publish tab
+            </a>
+            <a href="/">Pro</a>
           </nav>
+        </section>
+
+        <SearchBar />
+
+        <section className="notifications">
+          <span>
+            <svg viewBox="0 0 16 16">
+              <path
+                d="M7.011 4.164a1 1 0 1 1 1.973 0 3.001 3.001 0 0 1 2.014 2.833v1c.002 1.334.335 2.334 1 3h-3V11a1 1 0 1 1-2 0v-.003H4c.665-.666.998-1.666.998-3v-1c0-1.31.841-2.425 2.013-2.833z"
+                fill-rule="nonzero"
+                fill="#7a7a7a"
+              ></path>
+            </svg>
+          </span>
+          <p>No news</p>
         </section>
       </div>
     </div>

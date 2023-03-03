@@ -12,6 +12,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .logo-and-brandname {
       display: flex;
@@ -30,8 +31,89 @@
     }
 
     .navigation-links {
-      a:not(:last-child) {
-        margin-right: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0 24px;
+      a {
+        &:last-child {
+          color: #f55d55;
+        }
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        span {
+          color: #ffc600;
+        }
+      }
+    }
+
+    #ult-guitar-nav-search-bar {
+      display: flex;
+      flex-wrap: nowrap;
+
+      input,
+      button {
+        font-weight: 600;
+        line-height: 16px;
+        background-color: #111;
+        color: #ddc;
+        box-shadow: none;
+        min-height: 36px;
+        padding: 9px 12px;
+      }
+
+      input {
+        min-width: 408px;
+        width: 100%;
+        height: 36px;
+        font-size: 13px;
+        border: 1px solid #606060;
+        border-radius: 2px 0 0 2px;
+
+        &:focus-visible {
+          outline: transparent;
+        }
+      }
+
+      button {
+        font-size: 12px;
+        border-radius: 0 2px 2px 0;
+        border: 1px solid #606060;
+        border-left: transparent;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+
+    .notifications {
+      display: flex;
+      align-items: center;
+      //   justify-content: ;
+      padding: 0 24px;
+      min-width: 70px;
+
+      span {
+        background-color: #444;
+        border-radius: 2px;
+        height: 20px;
+        line-height: 16px;
+        margin-right: 4px;
+        padding: 2px;
+        width: 20px;
+
+        svg {
+          color: #7a7a7a;
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      p {
+        color: #929292;
+        font-size: 12px;
+        font-weight: bold;
       }
     }
   }
