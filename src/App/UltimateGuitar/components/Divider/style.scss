@@ -1,0 +1,6 @@
+@use "../../../../styles/colors.scss" as colors;
+
+#ult-tab-divider {
+  width: 100%;
+  border-top: colors.$ult-tab-borders 1px solid;
+}

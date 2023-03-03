@@ -15,4 +15,12 @@
       align-items: stretch;
     }
   }
+
+  a {
+    color: colors.$ult-tab-text-light-grey;
+
+    &:hover {
+      color: colors.$ult-tab-white;
+    }
+  }
 }

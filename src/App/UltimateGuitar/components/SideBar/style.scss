@@ -34,13 +34,6 @@
         display: flex;
         padding: 4px 5px;
         margin: 0 -4px 2px;
-        color: colors.$ult-tab-text-light-grey;
-
-        span {
-          &:hover {
-            color: colors.$ult-tab-white;
-          }
-        }
 
         div {
           color: colors.$ult-tab-light-grey;
@@ -50,6 +43,21 @@
     }
   }
 
-  // .website-users-informations {
-  // }
+  .website-users-informations {
+    color: colors.$ult-tab-text-light-grey;
+    font-size: 11px;
+    padding-top: 16px;
+
+    .users-online {
+      padding: 2px 6px;
+      background-color: colors.$ult-tab-navbar-background;
+      border-radius: 4px 2px;
+      line-height: 24px;
+    }
+
+    .members-and-guests {
+      margin: 4px 6px;
+      line-height: 14px;
+    }
+  }
 }

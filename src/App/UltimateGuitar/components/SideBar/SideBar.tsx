@@ -1,4 +1,5 @@
 import React from "react";
+import Divider from "../Divider/Divider";
 import "./style.scss";
 
 function SideBar() {
@@ -36,9 +37,15 @@ function SideBar() {
         </section>
       </article>
 
-      <div className="divider"></div>
+      <Divider />
 
-      <article className="website-users-informations"></article>
+      <article className="website-users-informations">
+        <section className="users-online">Users online: 5,349</section>
+        <section className="members-and-guests">
+          <div>4,509 members</div>
+          <div>840 guests</div>
+        </section>
+      </article>
     </div>
   );
 }
