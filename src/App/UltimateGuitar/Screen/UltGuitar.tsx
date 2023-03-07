@@ -1,3 +1,4 @@
+import Box from "../components/Box/Box";
 import NavBar from "../components/NavBar/NavBar";
 import SideBar from "../components/SideBar/SideBar";
 import "./style.scss";
@@ -9,10 +10,12 @@ function UltGuitar() {
         <div className="top-publicity"></div>
         <NavBar />
 
-        <section id="ult-guitar-body">
+        <article id="ult-guitar-body">
           <SideBar />
-          <div className="center-part">center</div>
-        </section>
+          <section>
+            <Box title="Pro">Hello</Box>
+          </section>
+        </article>
       </div>
     </div>
   );
