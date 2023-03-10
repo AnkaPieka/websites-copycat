@@ -39,9 +39,9 @@ function TrackCarousel() {
         : setTrackIndex(trackIndex + 1);
     }, 5000);
 
-    setTimeout(() => {
+    return () => {
       clearInterval(carouselInterval);
-    }, 5000 * 3);
+    };
   }, [trackIndex]);
 
   return (
