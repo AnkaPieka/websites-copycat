@@ -13,6 +13,10 @@
     #ult-guitar-body {
       display: flex;
       align-items: stretch;
+
+      .main-part {
+        width: 100%;
+      }
     }
   }
 

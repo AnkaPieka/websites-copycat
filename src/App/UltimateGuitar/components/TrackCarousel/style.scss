@@ -1,0 +1,28 @@
+@use "../../../../styles/colors.scss" as colors;
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#track-carousel {
+  padding: 0 16px;
+
+  .track-photo-timer {
+    width: 160px;
+    height: 160px;
+
+    .timer-bar {
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      height: 4px;
+      background-color: colors.$ult-tab-secondary;
+      animation: 5s linear slidein;
+    }
+  }
+}
