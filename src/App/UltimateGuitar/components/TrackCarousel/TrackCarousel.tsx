@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+import FastRewindIcon from "@mui/icons-material/FastRewind";
+import ReplayIcon from "@mui/icons-material/Replay";
 import "./style.scss";
+import { PlayArrow } from "@mui/icons-material";
 
 type CarouselTrack = {
   title: string;
@@ -50,7 +53,7 @@ function TrackCarousel() {
         <div key={i}>
           {i === trackIndex && (
             <div>
-              <section className="track-photo-timer">
+              <section className="track-box">
                 <div
                   style={{
                     backgroundImage: `url(${track.picture})`,
@@ -61,6 +64,19 @@ function TrackCarousel() {
                     position: "relative",
                   }}
                 >
+                  <div className="fake-player">
+                    <div className="player-element">
+                      <FastRewindIcon />
+                    </div>
+                    <div className="player-element">
+                      <PlayArrow />
+                    </div>
+                    <div style={{ margin: "10px solid red" }}></div>
+                    <div className="player-element">
+                      <ReplayIcon />
+                    </div>
+                  </div>
+
                   <div className="timer-bar"></div>
                 </div>
               </section>

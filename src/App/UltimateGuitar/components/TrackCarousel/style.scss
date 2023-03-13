@@ -12,17 +12,34 @@
 #track-carousel {
   padding: 0 16px;
 
-  .track-photo-timer {
+  .track-box {
     width: 160px;
     height: 160px;
 
     .timer-bar {
       position: absolute;
       bottom: 0;
-      width: 0%;
-      height: 4px;
+      height: 3px;
       background-color: colors.$ult-tab-secondary;
       animation: 5s linear slidein;
+    }
+
+    .fake-player {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 40px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+
+      .player-element {
+        width: 33.33%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }
