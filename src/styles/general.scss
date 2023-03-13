@@ -180,6 +180,11 @@ p {
 
 button {
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
 }
 
 .flex-column {

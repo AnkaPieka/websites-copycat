@@ -64,7 +64,10 @@ function TrackCarousel() {
                     position: "relative",
                   }}
                 >
-                  <div className="fake-player">
+                  <button
+                    onClick={() => alert("Not a real link!")}
+                    className="fake-player"
+                  >
                     <div className="player-element">
                       <FastRewindIcon />
                     </div>
@@ -75,7 +78,7 @@ function TrackCarousel() {
                     <div className="player-element">
                       <ReplayIcon />
                     </div>
-                  </div>
+                  </button>
 
                   <div className="timer-bar"></div>
                 </div>
